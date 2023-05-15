@@ -1,0 +1,29 @@
+#project__cheClasse-main {
+    padding: 40px;
+    &-video {
+        max-width: 800px;
+        margin: 0 auto;
+        & iframe {
+            @include flex__center;
+            border-radius: 15px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: var(--mainColor1);
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
+    }
+}
+
+#project__cheClasse-secondary {
+    @include flex__spaceEvenly;
+    padding: 2%;
+    & iframe {
+        border-radius: 20px;
+    }
+}

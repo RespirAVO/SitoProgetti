@@ -1,0 +1,22 @@
+#project__avoMappers {
+    padding: 40px;
+    & img {
+        @include block__center;
+        max-width: 500px;
+        max-height: 500px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    a {
+        text-decoration: none;
+        color: var(--mainColor1);
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
+    }
+}

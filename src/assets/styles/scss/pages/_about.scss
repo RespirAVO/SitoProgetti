@@ -1,0 +1,37 @@
+#about-us {
+    padding: 40px;
+    text-align: center;
+    hr {
+        @include block__center;
+        width: 90%;
+        margin: 80px auto 80px auto;
+    }
+    img {
+        border-radius: 20px;
+    }
+    .about-us__content {
+        &-member {
+            @include flex__spaceEvenly;
+            padding: 1%;
+            img {
+                max-width: 300px;
+                max-height: 300px;
+                border-radius: 20px;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            &_description {
+                height: 100px;
+                @include flex__spaceEvenly;
+                & .one {
+                    width: 303px;
+                    height: 100px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}
