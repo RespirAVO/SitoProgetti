@@ -8,6 +8,10 @@
     }
     img {
         border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
     .about-us__content {
         &-member {
